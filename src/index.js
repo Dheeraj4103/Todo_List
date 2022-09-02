@@ -1,25 +1,26 @@
 import './index.css'
 import 'boxicons'
 
-
+const logo = document.createElement('span');
+logo.className = "icon";
 var tp = document.createElement('i');
 var list = tp.classList;
 list.add('bx')
-list.add('bxl-github')
+list.add('bxs-label')
 list.add('bx-md')
-
+logo.appendChild(tp);
 
 var btn = document.createElement('button');
 btn.className = "projects"
 
-btn.appendChild(tp);
+btn.appendChild(logo);
 
 var item = document.createElement('span');
 item.innerHTML = "Hello"
 btn.appendChild(item)
 
-var sidebar = document.getElementById('side-bar');
-// sidebar.appendChild(btn);
+var contents = document.getElementById('contents');
+contents.appendChild(btn);
 
 let nodelist = sidebar.childNodes;
 
