@@ -8,6 +8,7 @@ var list = tp.classList;
 list.add('bx')
 list.add('bxs-label')
 list.add('bx-md')
+list.add('bx-spin-hover');
 logo.appendChild(tp);
 
 var btn = document.createElement('button');
