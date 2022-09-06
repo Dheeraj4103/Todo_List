@@ -1,28 +1,29 @@
 import './index.css'
 import 'boxicons'
 
-const logo = document.createElement('span');
-logo.className = "icon";
-var tp = document.createElement('i');
-var list = tp.classList;
-list.add('bx')
-list.add('bxs-label')
-list.add('bx-md')
-list.add('bx-spin-hover');
-logo.appendChild(tp);
+import { add_project } from "./addproject";
 
-var btn = document.createElement('button');
-btn.className = "projects"
 
-btn.appendChild(logo);
+const add_prj_btn = document.getElementById('add-project-btn');
+const projectform = document.getElementById('project-form');
 
-var item = document.createElement('span');
-item.innerHTML = "Hello"
-btn.appendChild(item)
+projectform.addEventListener('submit', function(e) {
+    console.log("We are in eventlistner");
+    e.preventDefault();
+});
 
-var contents = document.getElementById('contents');
-contents.appendChild(btn);
+add_prj_btn.onclick = () => {
+    console.log("clicked")
+    projectform.style.display = "flex";
+}
 
-let nodelist = sidebar.childNodes;
+const projectsubmit = document.getElementById('project-submit');
+projectsubmit.onclick = () => {
+    console.log("project submitted");
+    projectform.style.display = "none";
+    add_project(projectform[0].value);
+}
+
+
 
 

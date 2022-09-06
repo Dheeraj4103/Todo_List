@@ -87,3 +87,42 @@ div#items {
     padding: 20px 15px;
     background-color: rgb(255, 216, 169);
 }
+
+form#project-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: large;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+input {
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 0.55em;
+    border: none;
+    height: auto;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+
+form#project-form input#project-submit {
+    margin-top: 0.7em;
+    background-color: #F7E2D6;
+    padding: 0.6em 0.6em;
+}
+
+form#project-form input#project-submit:hover {
+    cursor: pointer;
+}
