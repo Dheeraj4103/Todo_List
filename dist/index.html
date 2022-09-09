@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
-    <link rel="stylesheet" href="../src/index.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
+    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="../src/taskstyle.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="side-bar">
+      <div id="title">
+        <h1><i class="bx bx-check-double bx-lg"></i>ToDo List</h1>
+      </div>
 
-        <div id="title">
-            <h1><i class='bx bx-check-double bx-lg'></i>ToDo List</h1>
-        </div>
+      <h2>
+        <b>Projects</b>
+      </h2>
 
-        <h2>
-           <b>Projects</b>
-        </h2>
-        
-        <div id="contents">
-        
-            <button class="projects">
-                 <span class="icon"><i class='bx bxs-label bx-md bx-spin-hover'></i></span>
-                    <span class="item">Daily</span>
-            </button>
-            <button class="projects">
-                 <span class="icon"><i class='bx bxs-label bx-md bx-spin-hover'></i> </span>
-                    <span>College</span>
-            </button>
-            
-        </div>
-        <form action="" id="project-form" style="display: none;">
-            <label for=""> Project Name:- </label>
-            <input type="text">
-            <input type="submit" value="Submit" id="project-submit">
-        </form>
-            <button id="add-project"><i class='bx bx-plus bx-lg bx-spin-hover' id="add-project-btn"></i></button>
-        
+      <div id="contents">
+        <button class="projects">
+          <span class="icon"
+            ><i class="bx bxs-label bx-md bx-spin-hover"></i
+          ></span>
+          <span class="item">Daily</span>
+        </button>
+        <button class="projects">
+          <span class="icon"
+            ><i class="bx bxs-label bx-md bx-spin-hover"></i>
+          </span>
+          <span>College</span>
+        </button>
+      </div>
+      <form action="" id="project-form" style="display: none">
+        <label for=""> Project Name:- </label>
+        <input type="text" />
+        <input type="submit" value="Submit" id="project-submit" />
+      </form>
+      <button id="add-project">
+        <i class="bx bx-plus bx-lg bx-spin-hover" id="add-project-btn"></i>
+      </button>
     </div>
 
     <div id="items">
-        <h1><u>Tasks</h1>
-        <div id="task-content">
-
+      <h1><u>Tasks</u></h1>
+      <div id="task-content">
+        <div class="task">
+          <input type="checkbox" name="" id="" class="check-task">
+          <h2>New Task</h2>
         </div>
-            <i class='bx bx-plus bx-lg bx-spin-hover' id="add-task-btn"></i>
+      </div>
+      <i class="bx bx-plus bx-lg bx-spin-hover" id="add-task-btn"></i>
     </div>
-    
+
     <script src="bundle.js"></script>
-</body>
+  </body>
 </html>

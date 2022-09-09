@@ -128,26 +128,6 @@ form#project-form input#project-submit:hover {
 }
 
 
-div#items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
 
-div#items i#add-task-btn {
-    /* border: 1px solid black; */
-    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-    border-radius: 5px;
-    background-color: #FFB4B4;
-    color: white;
-}
 
-div#items i#add-task-btn:hover {
-    cursor: pointer;
-}
 
-div#items div#task-content {
-    display: flex;
-    flex-direction: column;
-}

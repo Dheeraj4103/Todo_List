@@ -1,5 +1,7 @@
 import './index.css'
 import 'boxicons'
+import "./taskstyle.css";
+
 import { createTask } from './createitem';
 
 import { add_project } from "./addproject";
@@ -32,5 +34,6 @@ const items = document.getElementById('task-content');
 addtask.onclick = () => {
     items.appendChild(createTask("New Task"));
 }
+
 
 
