@@ -1,5 +1,6 @@
 import './index.css'
 import 'boxicons'
+import { createTask } from './createitem';
 
 import { add_project } from "./addproject";
 
@@ -24,6 +25,12 @@ projectsubmit.onclick = () => {
     add_project(projectform[0].value);
 }
 
+const addtask = document.getElementById('add-task-btn');
 
+const items = document.getElementById('task-content');
+
+addtask.onclick = () => {
+    items.appendChild(createTask("New Task"));
+}
 
 
