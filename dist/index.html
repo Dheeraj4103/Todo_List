@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <!-- --------------- Sidebar ------------------------------------------- -->
     <div id="side-bar">
       <div id="title">
         <h1><i class="bx bx-check-double bx-lg"></i>ToDo List</h1>
@@ -45,15 +46,28 @@
         <i class="bx bx-plus bx-lg bx-spin-hover" id="add-project-btn"></i>
       </button>
     </div>
-
+<!-- ---------------- Tasks of Projects --------------------------------------- -->
     <div id="items">
       <h1><u>Tasks</u></h1>
       <div id="task-content">
         <div class="task">
-          <input type="checkbox" name="" id="" class="check-task">
+            <input type="checkbox" class="check-task"/>
           <h2>New Task</h2>
         </div>
       </div>
+      <form action="" id="task-form" style="display: flex">
+        <label id="task"> Task Name:- <input type="text" /></label>
+        <label id="duedate"> Due Date:- <input type="date" name="" id=""></label>
+        <label id="Priorities">Priority:- 
+        <select name="priority" id="priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </label>
+        <input type="submit" value="Submit" id="task-submit" />
+      </form>
+
       <i class="bx bx-plus bx-lg bx-spin-hover" id="add-task-btn"></i>
     </div>
 

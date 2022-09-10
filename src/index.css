@@ -70,7 +70,7 @@ div#side-bar button#add-project i:hover {
 }
 
 
-form#project-form {
+form#project-form, form#task-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,13 +99,13 @@ input {
     box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
 }
 
-form#project-form input#project-submit {
+form#project-form input#project-submit, input#task-submit {
     margin-top: 0.7em;
     background-color: #F7E2D6;
     padding: 0.6em 0.6em;
 }
 
-form#project-form input#project-submit:hover {
+form#project-form input#project-submit:hover, input#task-submit {
     cursor: pointer;
 }
 

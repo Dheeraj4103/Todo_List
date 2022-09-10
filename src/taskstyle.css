@@ -11,7 +11,6 @@ div#items {
 }
 
 div#items i#add-task-btn {
-    /* border: 1px solid black; */
     box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
     border-radius: 10px;
     background-color: #FF9292;
@@ -25,26 +24,66 @@ div#items i#add-task-btn:hover {
 div#items div#task-content {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
     width: 100%;
 }
 
 
 .task {
-    /* border: 1px solid black; */
     box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
     margin: 10px 0;
-    padding: 10px 10px;
+    padding: 5px 10px;
     background-color: #F7A76C;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    flex: 0 0 5%;
 }
 
-input.check-task{
-    background-color: blue;
+.check-task{
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid black;
+    margin: 0px 5px;
+    box-shadow: none;
 }
 
+form#task-form {
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    border: none;
+    border-radius: 10px;
+}
+
+form#task-form label{
+    margin: 10px 0;
+}
+
+form#task-form label#Priorities select#priority{
+    min-width: 5em;
+    height: 2em;
+    font-size: large;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    border: none;
+    padding: 0px 5px;
+}
+
+form#task-form label#Priorities select#priority option {
+    font-weight: bold;
+    background-color: #F2D388;
+}
+
+form#task-form label#Priorities select#priority option:hover {
+    background-color: #FF9292;
+    cursor: pointer;
+}
+
+form#task-form {
+    align-items: flex-start;
+}
+
+div#items form#task-form input#task-submit {
+    margin-left: 40%;
+}
