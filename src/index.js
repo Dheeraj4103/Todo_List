@@ -37,3 +37,19 @@ addtask.onclick = () => {
 
 
 
+const form = document.getElementById("task-form");
+
+const submittask = document.getElementById("task-submit");
+
+form.addEventListener('submit', function(e) {
+  console.log("We are in eventlistner");
+  e.preventDefault();
+});
+
+submittask.onclick = () => {
+    const title = document.getElementById("task-ipt");
+    for (var i = 0; i < form.childElementCount-1; i++) {
+        console.log(form[i].value);
+        form[i].value = "hello";
+    }
+}

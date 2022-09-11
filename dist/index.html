@@ -11,6 +11,9 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel = "icon" href = "./check-double-regular-24.png" 
+        type = "image/x-icon">
+
   </head>
   <body>
     <!-- --------------- Sidebar ------------------------------------------- -->
@@ -56,14 +59,19 @@
         </div>
       </div>
       <form action="" id="task-form" style="display: flex">
-        <label id="task"> Task Name:- <input type="text" /></label>
-        <label id="duedate"> Due Date:- <input type="date" name="" id=""></label>
+        <h2 style="margin: 0 0;"> <u>Add Task</u></h2>
+        <label id="task"> Task Name:- <input type="text" id="task-ipt"/></label>
+        <label id="duedate"> Due Date:- <input type="date" name="" id="duedate-ipt"></label>
         <label id="Priorities">Priority:- 
         <select name="priority" id="priority">
-          <option value="high">High</option>
-          <option value="medium">Medium</option>
-          <option value="low">Low</option>
+          <option value="high" style="background-color: #ffb4a2;">High</option>
+          <option value="medium" style="background-color: #ffcdb2;">Medium</option>
+          <option value="low" style="background-color: #f4978e;">Low</option>
         </select>
+      </label>
+      Notes:- 
+      <label for="" id="notes"> 
+        <textarea name="Notes" id="" cols="35" rows="8" ></textarea>
       </label>
         <input type="submit" value="Submit" id="task-submit" />
       </form>
