@@ -2,15 +2,14 @@ import './index.css'
 import 'boxicons'
 import "./taskstyle.css";
 
-import { createTask } from './createitem';
-
+import { addTask } from './createitem';
 import { add_project } from "./addproject";
 
 
 const add_prj_btn = document.getElementById('add-project-btn');
 const projectform = document.getElementById('project-form');
 
-projectform.addEventListener('submit', function(e) {
+projectform.addEventListener('submit', function (e) {
     console.log("We are in eventlistner");
     e.preventDefault();
 });
@@ -31,25 +30,22 @@ const addtask = document.getElementById('add-task-btn');
 
 const items = document.getElementById('task-content');
 
-addtask.onclick = () => {
-    items.appendChild(createTask("New Task"));
-}
-
-
-
 const form = document.getElementById("task-form");
 
 const submittask = document.getElementById("task-submit");
 
-form.addEventListener('submit', function(e) {
-  console.log("We are in eventlistner");
-  e.preventDefault();
+addtask.onclick = () => {
+    form.style.display = "flex";
+}
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
 });
 
 submittask.onclick = () => {
-    const title = document.getElementById("task-ipt");
-    for (var i = 0; i < form.childElementCount-1; i++) {
-        console.log(form[i].value);
-        form[i].value = "hello";
-    }
+    console.log("Clicked on task");
+    // addTask(form);
+    items.appendChild(addTask(form));
+    form.reset()
+    form.style.display = "none"
 }
