@@ -28,12 +28,6 @@ function createTask(newtask) {
   return task;
 }
 
-function addTask(form) {
-  let task = new Task(form[0].value, form[1].value, form[2].value, form[3].value, false);
-  console.log(task)
-  let newtask = createTask(task);
 
-  return newtask;
-}
 
-export { addTask };
+export { createTask, Task };

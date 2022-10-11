@@ -11,9 +11,7 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel = "icon" href = "./check-double-regular-24.png" 
-        type = "image/x-icon">
-
+    <link rel="icon" href="./check-double-regular-24.png" type="image/x-icon" />
   </head>
   <body>
     <!-- --------------- Sidebar ------------------------------------------- -->
@@ -27,13 +25,13 @@
       </h2>
 
       <div id="contents">
-        <button class="projects">
+        <button class="projects" id="Daily">
           <span class="icon"
             ><i class="bx bxs-label bx-md bx-spin-hover"></i
           ></span>
           <span class="item">Daily</span>
         </button>
-        <button class="projects">
+        <button class="projects" id="College">
           <span class="icon"
             ><i class="bx bxs-label bx-md bx-spin-hover"></i>
           </span>
@@ -49,30 +47,37 @@
         <i class="bx bx-plus bx-lg bx-spin-hover" id="add-project-btn"></i>
       </button>
     </div>
-<!-- ---------------- Tasks of Projects --------------------------------------- -->
+    <!-- ---------------- Tasks of Projects --------------------------------------- -->
     <div id="items">
       <h1><u>Tasks</u></h1>
       <div id="task-content">
         <div class="task">
-            <input type="checkbox" class="check-task"/>
+          <input type="checkbox" class="check-task" />
           <h2>New Task</h2>
         </div>
       </div>
       <form action="" id="task-form" style="display: none">
-        <h2 style="margin: 0 0;"> <u>Add Task</u></h2>
-        <label id="task"> Task Name:- <input type="text" id="task-ipt"/></label>
-        <label id="duedate"> Due Date:- <input type="date" name="" id="duedate-ipt"></label>
-        <label id="Priorities">Priority:- 
-        <select name="priority" id="priority">
-          <option value="high" style="background-color: #ffb4a2;">High</option>
-          <option value="medium" style="background-color: #ffcdb2;">Medium</option>
-          <option value="low" style="background-color: #f4978e;">Low</option>
-        </select>
-      </label>
-      Notes:- 
-      <label for="" id="notes"> 
-        <textarea name="Notes" id="" cols="35" rows="8" ></textarea>
-      </label>
+        <h2 style="margin: 0 0"><u>Add Task</u></h2>
+        <label id="task">
+          Task Name:- <input type="text" id="task-ipt"
+        /></label>
+        <label id="duedate">
+          Due Date:- <input type="date" name="" id="duedate-ipt"
+        /></label>
+        <label id="Priorities"
+          >Priority:-
+          <select name="priority" id="priority">
+            <option value="high" style="background-color: #ffb4a2">High</option>
+            <option value="medium" style="background-color: #ffcdb2">
+              Medium
+            </option>
+            <option value="low" style="background-color: #f4978e">Low</option>
+          </select>
+        </label>
+        Notes:-
+        <label for="" id="notes">
+          <textarea name="Notes" id="" cols="35" rows="8"></textarea>
+        </label>
         <input type="submit" value="Submit" id="task-submit" />
       </form>
 
